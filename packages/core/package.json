@@ -1,0 +1,21 @@
+{
+  "name": "@web-monitor/core",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup --dts"
+  },
+  "peerDependencies": {
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.3"
+  }
+}

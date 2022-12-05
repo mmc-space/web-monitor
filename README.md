@@ -1,21 +1,14 @@
-# @mmc-group/web-lib
-A commonly used web lib.
+# @mmc-group/web-monitor
+A commonly used web monitor lib.
 
 ### Installation
 
 ```bash
-pnpm i @mmc-group/web-lib
+pnpm i @mmc-group/web-monitor
 ```
 
 ### Usage
 
 ```ts
-import { wait } from '@mmc-group/web-lib'
-
-const test = async () => {
-  await wait(2000)
-  console.log('1')
-}
-
-test()
+import { wait } from '@mmc-group/web-monitor'
 ```
