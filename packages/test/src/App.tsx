@@ -1,4 +1,4 @@
-import { browserMonitor, performanceReport } from '@web-monitor/browser'
+import { browserMonitor, performanceReport } from '@mmc-cloud/web-monitor'
 import reactLogo from './assets/react.svg'
 
 function App() {

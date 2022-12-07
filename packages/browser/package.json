@@ -1,6 +1,6 @@
 {
-  "name": "@web-monitor/browser",
-  "version": "1.0.0",
+  "name": "@mmc-cloud/web-monitor",
+  "version": "1.0.2",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -10,18 +10,11 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "tsup src/index.ts --dts --format esm,cjs"
-  },
-  "peerDependencies": {
-    "@mmc-group/web-lib": "*",
-    "tsup": "^6.5.0",
-    "typescript": "^4.9.3"
-  },
-  "dependencies": {
-    "@web-monitor/core": "workspace:*"
   },
   "repository": {
     "type": "git",
@@ -30,5 +23,13 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "@mmc-cloud/web-lib": "*",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@mmc-cloud/web-monitor-core": "workspace:*"
   }
 }

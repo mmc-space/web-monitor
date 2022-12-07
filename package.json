@@ -6,20 +6,15 @@
     "version": "changeset version",
     "publish": "changeset publish"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mmc-space/web-monitor.git"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "keywords": [],
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
-    "@mmc-group/eslint-config": "^0.0.4",
-    "@mmc-group/web-lib": "^0.0.4",
+    "@mmc-cloud/eslint-config": "^0.0.4",
+    "@mmc-cloud/web-lib": "^0.0.4",
     "eslint": "^8.29.0",
     "tsup": "^6.5.0",
     "typescript": "^4.9.3"

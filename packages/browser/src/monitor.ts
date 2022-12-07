@@ -1,5 +1,5 @@
-import { Monitor } from '@web-monitor/core'
-import { logger } from '@mmc-group/web-lib'
+import { Monitor } from '@mmc-cloud/web-monitor-core'
+import { logger } from '@mmc-cloud/web-lib'
 
 export class BrowserMonitor extends Monitor {
   public async reportByBeacon(data: Record<string, any>, url: string | URL) {

@@ -1,4 +1,4 @@
-import { CommenReport, ErrorType } from '@web-monitor/core'
+import { CommenReport, ErrorType } from '@mmc-cloud/web-monitor-core'
 
 import type { ResourceLoadErrorTarget } from './types/event'
 import type { CommenError } from './types/runtime'

@@ -1,4 +1,4 @@
-import { CommenReport } from '@web-monitor/core/'
+import { CommenReport } from '@mmc-cloud/web-monitor-core'
 import type { Performance } from './types/performance'
 
 class PerformanceReport extends CommenReport {
