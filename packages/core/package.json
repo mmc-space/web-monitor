@@ -5,14 +5,23 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.esm.js",
-  "types": "./dist/index.d.ts",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmc-space/web-monitor.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
-    "build": "tsup --dts"
+    "build": "tsup src/index.ts --dts --format esm,cjs"
   },
   "peerDependencies": {
     "tsup": "^6.5.0",

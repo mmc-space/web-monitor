@@ -1,14 +1,10 @@
-import { browserMonitor } from '@web-monitor/browser'
+import { browserMonitor, performanceReport } from '@web-monitor/browser'
 import reactLogo from './assets/react.svg'
-import './App.css'
 
 function App() {
   const test = () => {
-    browserMonitor.init({
-      baseUrl: 'https://www.mmszb.cn',
-      errors: ['runtime'],
-      appKey: 'mmc-test',
-    })
+    const performance = performanceReport.generateReport()
+    browserMonitor.report(performance, '123')
   }
 
   return (

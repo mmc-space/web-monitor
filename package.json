@@ -1,12 +1,4 @@
 {
-  "name": "web-monitor",
-  "version": "0.0.1",
-  "description": "A commonly used web monitor lib.",
-  "author": "codeDaiQin",
-  "engines": {
-    "pnpm": ">= 7.0.0"
-  },
-  "packageManager": "pnpm@7.14.0",
   "scripts": {
     "preinstall": "npx -y only-allow pnpm",
     "lint": "eslint --fix --ext .ts packages/**/*",

@@ -10,5 +10,7 @@ pnpm i @mmc-group/web-monitor
 ### Usage
 
 ```ts
-import { wait } from '@mmc-group/web-monitor'
+import { browserMonitor, performanceReport } from '@mmc-group/web-monitor'
+const performance = performanceReport.generateReport()
+browserMonitor.report(performance, 'url')
 ```

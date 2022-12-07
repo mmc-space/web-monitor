@@ -1,20 +1,20 @@
 // Types of errors collected
-export type ErrorType = 'runtime' | 'script' | 'resources'
+export enum ErrorType {
+  runtime = 'runtime',
+  script = 'script',
+  resources = 'resources',
+}
 
 export interface UserConfig {
   appKey?: string
 
   baseUrl?: string
 
-  errors?: ErrorType[]
+  errors?: Array<keyof typeof ErrorType>
 
   performance?: boolean
 
   onlineTime?: boolean
 }
 
-type ReportType = 'image' | 'beacon'
-
-export interface ReportConfig {
-  type: ReportType
-}
+export type ReportType = 'image' | 'beacon' & string
