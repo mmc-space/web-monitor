@@ -16,7 +16,7 @@ export class BrowserMonitor extends Monitor {
   }
 
   public async reportByImg(data: Record<string, any>, url: string | URL) {
-    const params = new URLSearchParams(data)
+    const params = Object.entries(data).map(([key, value]) => `${key}=${value}`).join('&')
     new Image().src = `${url}?data=${JSON.stringify(params)}`
   }
 }

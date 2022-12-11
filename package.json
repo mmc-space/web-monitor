@@ -6,14 +6,11 @@
     "version": "changeset version",
     "publish": "changeset publish"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "keywords": [],
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
-    "@mmc-cloud/eslint-config": "^0.0.4",
+    "@mmc-cloud/eslint-config": "1.0.0",
     "@mmc-cloud/web-lib": "^0.0.4",
     "eslint": "^8.29.0",
     "tsup": "^6.5.0",
