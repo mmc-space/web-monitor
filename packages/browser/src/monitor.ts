@@ -1,9 +1,9 @@
-import { Monitor } from '@mmc-cloud/web-monitor-core'
+import { Global, Monitor } from '@mmc-cloud/web-monitor-core'
 import { logger } from '@mmc-cloud/web-lib'
 
 export class BrowserMonitor extends Monitor {
   public async reportByBeacon(data: Record<string, any>, url: string | URL) {
-    if (!window.navigator) {
+    if (!Global.navigator) {
       logger.error('The navigator API is not supported')
       return
     }

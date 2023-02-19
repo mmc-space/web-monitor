@@ -26,7 +26,10 @@ importers:
       '@mmc-cloud/web-monitor-core': link:../core
 
   packages/core:
-    specifiers: {}
+    specifiers:
+      '@types/node': ^18.14.0
+    devDependencies:
+      '@types/node': 18.14.0
 
   packages/test:
     specifiers:
@@ -707,6 +710,10 @@ packages:
 
   /@types/node/12.20.55:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
+    dev: true
+
+  /@types/node/18.14.0:
+    resolution: {integrity: sha512-5EWrvLmglK+imbCJY0+INViFWUHg1AHel1sq4ZVSfdcNqGy9Edv3UB9IIzzg+xPaUcAgZYcfVs2fBcwDeZzU0A==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
