@@ -1,4 +1,4 @@
-import { CommenReport, ErrorType } from '@mmc-cloud/web-monitor-core'
+import { CommenReport, ErrorType, Global } from '@mmc-cloud/web-monitor-core'
 
 import type { ResourceLoadErrorTarget } from './types/event'
 import type { CommenError } from './types/runtime'
@@ -6,7 +6,7 @@ import type { CommenError } from './types/runtime'
 class RuntimeReport extends CommenReport {
   constructor() {
     super()
-    window.addEventListener('error', (event: ErrorEvent) => {
+    Global.addEventListener('error', (event: ErrorEvent) => {
       const target = event.target as ResourceLoadErrorTarget
       const { tagName } = target
 

@@ -1,12 +1,12 @@
-import { CommenReport } from '@mmc-cloud/web-monitor-core'
+import { CommenReport, Global } from '@mmc-cloud/web-monitor-core'
 import type { Performance } from './types/performance'
 
 class PerformanceReport extends CommenReport {
   public generateReport() {
-    if (!window.performance)
+    if (!Global.performance)
       throw new Error('Current browser does not support performance API')
 
-    const [entry] = window.performance.getEntries()
+    const [entry] = Global.performance.getEntries()
     const {
       // dns
       domainLookupEnd,
